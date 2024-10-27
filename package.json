@@ -8,9 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepredeploy": "git add . && git commit -m \"Auto-update by script\" && git push origin main",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "git add . && git commit -m \"Auto-update by script\" && git push origin main",
+    "deploy": "npm run build && gh-pages -d dist",
     "postdeploy": "echo Deployment complete!"
   },
   "dependencies": {
